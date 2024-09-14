@@ -1,0 +1,20 @@
+<div class="card spell" style="width: 50%;">
+    <div class="card-body">
+      <h5 class="card-title">{{spell.name}}</h5>
+      <p class="card-text">{{spell.desc}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Level:</strong> {{spell.level}}</li>
+      <li class="list-group-item"><strong>Range:</strong> {{spell.range}}</li>
+      <li class="list-group-item"><strong>Duration:</strong> {{spell.duration}}</li>
+      <li class="list-group-item">
+        <div style="display: flex">
+            <strong>Available to:&nbsp;</strong>
+            @for(class of spell.classes; track $index)
+            {
+                <p>{{class.name + "&nbsp;"}}</p>
+            }
+        </div>
+      </li>
+    </ul>
+  </div>

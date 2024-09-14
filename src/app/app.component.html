@@ -1,0 +1,27 @@
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  @for(spell of myClericSpells; track $index)
+  {
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          (click)="GetSpellInfo(spell.url, $index)" 
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          attr.data-bs-target="#panelsStayOpen-collapse-{{$index}}"
+          aria-expanded="false"
+          attr.aria-controls="panelsStayOpen-collapse-{{$index}}">
+          {{spell.name}} [{{spell.level}}]
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapse-{{$index}}" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          @if(mySelectedSpellIndex === $index && mySpellInfo)
+          {
+            <app-spellinfo [spell]="mySpellInfo"></app-spellinfo>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>
