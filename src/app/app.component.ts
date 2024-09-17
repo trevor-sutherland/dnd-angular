@@ -1,30 +1,33 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DNDService } from './dnd.service';
-import { Spell } from '../interfaces/spell';
-import { APIResults } from '../interfaces/apiresults';
-import { SpellsAvailable } from '../interfaces/spellsavailable';
+import { Component, OnInit }  from '@angular/core';
+import { RouterOutlet }       from '@angular/router';
+import { DNDService }         from './dnd.service';
+import { Spell }              from '../interfaces/spell';
+import { APIResults }         from '../interfaces/apiresults';
+import { SpellsAvailable }    from '../interfaces/spellsavailable';
 import { SpellInfoComponent } from './spellinfo/spellinfo.component';
+import { LoginComponent }     from "./login/login.component";
 
 @Component({
-  selector: 'app-root',
+  selector:   'app-root',
   standalone: true,
-  providers: [DNDService],
-  imports: 
-  [
+  providers:  [ DNDService ],
+  imports:    [
     RouterOutlet,
-    SpellInfoComponent
+    SpellInfoComponent,
+    LoginComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl:    './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit
+{
   title = 'fartbuckle';
   myClericSpells: SpellsAvailable[] = [];
   mySpellInfo: Spell | null = null;
   mySelectedSpellIndex: number = Number.NaN;
 
-  constructor(private dndService: DNDService) { }
+  constructor(private dndService: DNDService)
+  {}
 
   ngOnInit(): void
   {
