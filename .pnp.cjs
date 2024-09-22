@@ -46,6 +46,8 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.10.0"],\
           ["@types/bootstrap", "npm:5.2.10"],\
           ["@types/jasmine", "npm:5.1.4"],\
+          ["@types/md5", "npm:2.3.5"],\
+          ["@types/mysql", "npm:2.15.26"],\
           ["@typescript-eslint/eslint-plugin", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
           ["@typescript-eslint/parser", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
           ["@typescript-eslint/types", "npm:8.6.0"],\
@@ -61,11 +63,11 @@ const RAW_RUNTIME_STATE =
           ["karma-coverage", "npm:2.2.1"],\
           ["karma-jasmine", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:5.1.0"],\
           ["karma-jasmine-html-reporter", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:2.1.0"],\
+          ["md5", "npm:2.3.0"],\
           ["rxjs", "npm:7.8.1"],\
           ["tslib", "npm:2.7.0"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
-          ["typescript-eslint", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
-          ["zone.js", "npm:0.14.10"]\
+          ["typescript-eslint", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -740,7 +742,7 @@ const RAW_RUNTIME_STATE =
           ["@types/zone.js", null],\
           ["rxjs", "npm:7.8.1"],\
           ["tslib", "npm:2.7.0"],\
-          ["zone.js", "npm:0.14.10"]\
+          ["zone.js", null]\
         ],\
         "packagePeers": [\
           "@types/rxjs",\
@@ -4673,6 +4675,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/md5", [\
+      ["npm:2.3.5", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@types-md5-npm-2.3.5-bd5c825c57-10c0.zip/node_modules/@types/md5/",\
+        "packageDependencies": [\
+          ["@types/md5", "npm:2.3.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/mime", [\
       ["npm:1.3.5", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@types-mime-npm-1.3.5-48d28990db-10c0.zip/node_modules/@types/mime/",\
@@ -4687,6 +4698,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@types-mute-stream-npm-0.0.4-3e79ac07f9-10c0.zip/node_modules/@types/mute-stream/",\
         "packageDependencies": [\
           ["@types/mute-stream", "npm:0.0.4"],\
+          ["@types/node", "npm:22.5.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/mysql", [\
+      ["npm:2.15.26", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@types-mysql-npm-2.15.26-e8ee291ec4-10c0.zip/node_modules/@types/mysql/",\
+        "packageDependencies": [\
+          ["@types/mysql", "npm:2.15.26"],\
           ["@types/node", "npm:22.5.5"]\
         ],\
         "linkType": "HARD"\
@@ -6074,6 +6095,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["charenc", [\
+      ["npm:0.0.2", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/charenc-npm-0.0.2-aca0c2f207-10c0.zip/node_modules/charenc/",\
+        "packageDependencies": [\
+          ["charenc", "npm:0.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["chokidar", [\
       ["npm:3.6.0", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/chokidar-npm-3.6.0-3c413a828f-10c0.zip/node_modules/chokidar/",\
@@ -6523,6 +6553,15 @@ const RAW_RUNTIME_STATE =
           ["path-key", "npm:3.1.1"],\
           ["shebang-command", "npm:2.0.0"],\
           ["which", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["crypt", [\
+      ["npm:0.0.2", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/crypt-npm-0.0.2-033627d94f-10c0.zip/node_modules/crypt/",\
+        "packageDependencies": [\
+          ["crypt", "npm:0.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7506,6 +7545,8 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.10.0"],\
           ["@types/bootstrap", "npm:5.2.10"],\
           ["@types/jasmine", "npm:5.1.4"],\
+          ["@types/md5", "npm:2.3.5"],\
+          ["@types/mysql", "npm:2.15.26"],\
           ["@typescript-eslint/eslint-plugin", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
           ["@typescript-eslint/parser", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
           ["@typescript-eslint/types", "npm:8.6.0"],\
@@ -7521,11 +7562,11 @@ const RAW_RUNTIME_STATE =
           ["karma-coverage", "npm:2.2.1"],\
           ["karma-jasmine", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:5.1.0"],\
           ["karma-jasmine-html-reporter", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:2.1.0"],\
+          ["md5", "npm:2.3.0"],\
           ["rxjs", "npm:7.8.1"],\
           ["tslib", "npm:2.7.0"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
-          ["typescript-eslint", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"],\
-          ["zone.js", "npm:0.14.10"]\
+          ["typescript-eslint", "virtual:8e6907704113509d8e8f470e4b1481ada7ba4bd0521265445cdb388315ab602f3c76bc0109962ddc65a564d6941c5ec817faf02b424d3618280d63e2edaf9f58#npm:8.6.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -8440,6 +8481,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["is-binary-path", "npm:2.1.0"],\
           ["binary-extensions", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-buffer", [\
+      ["npm:1.1.6", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/is-buffer-npm-1.1.6-08199d9ccc-10c0.zip/node_modules/is-buffer/",\
+        "packageDependencies": [\
+          ["is-buffer", "npm:1.1.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9374,6 +9424,18 @@ const RAW_RUNTIME_STATE =
           ["proc-log", "npm:4.2.0"],\
           ["promise-retry", "npm:2.0.1"],\
           ["ssri", "npm:10.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["md5", [\
+      ["npm:2.3.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/md5-npm-2.3.0-86c49d3915-10c0.zip/node_modules/md5/",\
+        "packageDependencies": [\
+          ["md5", "npm:2.3.0"],\
+          ["charenc", "npm:0.0.2"],\
+          ["crypt", "npm:0.0.2"],\
+          ["is-buffer", "npm:1.1.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12902,15 +12964,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/yoctocolors-cjs-npm-2.1.2-52d47e1a9b-10c0.zip/node_modules/yoctocolors-cjs/",\
         "packageDependencies": [\
           ["yoctocolors-cjs", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["zone.js", [\
-      ["npm:0.14.10", {\
-        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/zone.js-npm-0.14.10-f84b9a2b62-10c0.zip/node_modules/zone.js/",\
-        "packageDependencies": [\
-          ["zone.js", "npm:0.14.10"]\
         ],\
         "linkType": "HARD"\
       }]\

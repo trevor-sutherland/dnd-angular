@@ -1,0 +1,66 @@
+
+<div class="container-sm" id="div-login-box">
+  <form [formGroup]="CreateAccountForm">
+    <div class="mb-3">
+      <label for="input-username" class="form-label">Username</label>
+      <input
+        formControlName="Username"
+        type="text"
+        class="form-control {{CheckIfValid(CreateAccountForm, 'Username', boolFormSubmitted)}}"
+        id="input-username">
+    </div>
+    <div class="mb-3">
+      <label for="input-password" class="form-label">Password</label>
+      <input
+        formControlName="Password"
+        type="password"
+        class="form-control {{CheckIfValid(CreateAccountForm, 'Password', boolFormSubmitted)}}"
+        id="input-password">
+    </div>
+    <div class="mb-3">
+      <label for="input-verify-password" class="form-label">Verify Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="input-verify-password">
+    </div>
+    <div class="mb-3">
+      <label for="input-email" class="form-label">Email</label>
+      <input
+        formControlName="Email"
+        type="email"
+        class="form-control {{CheckIfValid(CreateAccountForm, 'Email', boolFormSubmitted)}}"
+        id="input-email">
+    </div>
+    <div class="mb-3">
+      <label for="input-firstname" class="form-label">First Name</label>
+      <input
+        formControlName="FirstName"
+        type="text"
+        class="form-control {{CheckIfValid(CreateAccountForm, 'FirstName', boolFormSubmitted)}}"
+        id="input-firstname">
+    </div>
+    <div class="mb-3">
+      <label for="input-lastname" class="form-label">Last Name</label>
+      <input
+        formControlName="LastName"
+        type="text"
+        class="form-control {{CheckIfValid(CreateAccountForm, 'LastName', boolFormSubmitted)}}"
+        id="input-lastname">
+    </div>
+    <div class="btn-group">
+      <button
+        (click)="CreateAccount($event)"
+        id="btn-login"
+        class="btn btn-primary"
+      >Create
+      </button>
+      <button
+        (click)="ShowCreateAccount($event)"
+        id="btn-login"
+        class="btn btn-primary"
+      >Cancel
+      </button>
+  </div>
+  </form>
+</div>

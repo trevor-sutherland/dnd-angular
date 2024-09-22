@@ -1,0 +1,39 @@
+
+<div class="container-sm" id="div-login-box">
+  <form>
+    <div class="mb-3">
+      <label for="input-username" class="form-label">Username</label>
+      <input
+        type="text"
+        name="username"
+        autocomplete="username"
+        [(ngModel)]="myUsername"
+        class="form-control"
+        id="input-username">
+    </div>
+    <div class="mb-3">
+      <label for="input-password" class="form-label">Password</label>
+      <input
+        name="password"
+        type="password"
+        autocomplete="current-password"
+        [(ngModel)]="myPassword"
+        class="form-control"
+        id="input-password">
+    </div>
+    <div class="btn-group">
+      <button
+        (click)="UserLogin($event)"
+        id="btn-login"
+        class="btn btn-primary"
+      >Login
+      </button>
+      <button
+        (click)="CreateAccount($event)"
+        id="btn-create-account"
+        class="btn btn-primary"
+      >Create Account
+      </button>
+  </div>
+  </form>
+</div>

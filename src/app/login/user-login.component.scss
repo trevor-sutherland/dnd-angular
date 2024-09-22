@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+#div-login-box
+{
+  @media (min-width: 992px)
+  {
+    width: 50%;
+  }
+
+  @media (min-width: 1200px)
+  {
+    width: 30%;
+  }
+
+  margin-top: 15%;
+    padding: 2em;
+    background-color: $background1;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #aaa;
+    z-index: 1050;
+}
+
+#btn-login
+{
+  margin-top: 1em;
+}
+
+#btn-create-account
+{
+  margin-top: 1em;
+}
+
+.btn-group
+{
+  display: flex;
+  column-gap: 2em;
+}
